@@ -1,6 +1,6 @@
 ---
-title: tags
+title: 标签
 date: {{ date }}
-type: "tags"
-layout: "tags"
+type: tags
+layout: tags
 ---

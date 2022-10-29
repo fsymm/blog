@@ -1,6 +1,6 @@
 ---
-title: categories
+title: 分类
 date: {{ date }}
-type: "categories"
-layout: "categories"
+type: categories
+layout: categories
 ---
