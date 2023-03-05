@@ -26,7 +26,7 @@ select * from test;
 
 结果：
 
-<img src="SQL-常用脚本/640.png" alt="图片" style="zoom:80%;" />
+<img src="640.png" alt="图片" style="zoom:80%;" />
 
 ```sql
 select ID,NAME,
@@ -47,7 +47,7 @@ as pvt
 
 结果：
 
-<img src="SQL-常用脚本/640-16688420605251.png" alt="图片" style="zoom:80%;" />
+<img src="640-16688420605251.png" alt="图片" style="zoom:80%;" />
 
 ## 2、列转行的用法UNPIOVT
 
@@ -60,7 +60,7 @@ select * from test2;
 
 结果：
 
-<img src="SQL-常用脚本/640-16688420605252.png" alt="图片" style="zoom:80%;" />
+<img src="640-16688420605252.png" alt="图片" style="zoom:80%;" />
 
 ```sql
 --列转行
@@ -78,7 +78,7 @@ as unpvt
 
 结果：
 
-<img src="SQL-常用脚本/640-16688420605253.png" alt="图片" style="zoom:80%;" />
+<img src="640-16688420605253.png" alt="图片" style="zoom:80%;" />
 
 
 
@@ -90,7 +90,7 @@ SELECT REPLACE('abcdefg',SUBSTRING('abcdefg',2,4),'**')
 
 结果：
 
-![图片](SQL-常用脚本/640-16688420605264.png)
+![图片](640-16688420605264.png)
 
 
 
@@ -100,7 +100,7 @@ SELECT REPLACE('13512345678',SUBSTRING('13512345678',4,11),'********')
 
 结果：
 
-![图片](SQL-常用脚本/640-16688420605265.png)
+![图片](640-16688420605265.png)
 
 
 
@@ -110,7 +110,7 @@ SELECT REPLACE('12345678@qq.com','1234567','******')
 
 结果：
 
-![图片](SQL-常用脚本/640-16688420605266.png)
+![图片](640-16688420605266.png)
 
 
 
@@ -124,7 +124,7 @@ SELECT * FROM HR.Employees
 
 结果：
 
-<img src="SQL-常用脚本/640-16688420605267.png" alt="图片" style="zoom:80%;" />
+<img src="640-16688420605267.png" alt="图片" style="zoom:80%;" />
 
 
 
@@ -138,7 +138,7 @@ having count(1)>1)
 
 结果：
 
-<img src="SQL-常用脚本/640-16688420605268.png" alt="图片" style="zoom:80%;" />
+<img src="640-16688420605268.png" alt="图片" style="zoom:80%;" />
 
 对比一下发现，ID为1，2的被过滤掉了，因为他们只有一条记录
 
@@ -155,7 +155,7 @@ having count(1)>1)
 
 结果：
 
-<img src="SQL-常用脚本/640-16688420605269.png" alt="图片" style="zoom:80%;" />
+<img src="640-16688420605269.png" alt="图片" style="zoom:80%;" />
 
 title在和titleofcourtesy进行拼接后符合条件的就只有ID为6,7,8,9的了
 
@@ -179,7 +179,7 @@ GROUP BY id,name
 
 
 
-<img src="SQL-常用脚本/640-16688420605251.png" alt="图片" style="zoom:80%;" />
+<img src="640-16688420605251.png" alt="图片" style="zoom:80%;" />
 
 我们将原来的4列增加到了6列。细心的朋友可能发现了这个结果和上面的行转列怎么一模一样？其实上面的行转列是省略写法，这种是比较通用的写法。 
 
@@ -425,7 +425,7 @@ END AS '百分数'  --FROM 表
 
 返回的结果：
 
-<img src="SQL-常用脚本/640-166884206052610.png" alt="图片" style="zoom:80%;" />
+<img src="640-166884206052610.png" alt="图片" style="zoom:80%;" />
 
 
 
@@ -439,7 +439,7 @@ SELECT
 
 执行结果：
 
-<img src="SQL-常用脚本/640-166884206052611.png" alt="图片" style="zoom:80%;" />
+<img src="640-166884206052611.png" alt="图片" style="zoom:80%;" />
 
 
 
@@ -575,7 +575,7 @@ PRINT 'SQL'+CHAR(9)+'ROAD'
 
 执行结果：
 
-<img src="SQL-常用脚本/640-166884206052612.png" alt="图片" style="zoom:80%;" />
+<img src="640-166884206052612.png" alt="图片" style="zoom:80%;" />
 
 
 
@@ -583,7 +583,7 @@ PRINT 'SQL'+CHAR(9)+'ROAD'
 
 
 
-![图片](SQL-常用脚本/640-166884206052613.png)
+![图片](640-166884206052613.png)
 
 
 
@@ -596,7 +596,7 @@ SELECT 'SQL' + CHAR(10) + CHAR(13) + 'ROAD'
 
 结果如下：
 
-<img src="SQL-常用脚本/640-166884206052614.png" alt="图片" style="zoom:80%;" />
+<img src="640-166884206052614.png" alt="图片" style="zoom:80%;" />
 
 
 
@@ -643,7 +643,7 @@ EXEC sp_lock
 
 还有如何查看查询分析器的SPID，可以在查询分析器的状态栏看到，比如sa(57),这就表示当前查询分析器SPID为57,这样在使用profile的时候就可以指定当前窗体进行监控。状态栏在查询窗口的右下角。
 
-<img src="SQL-常用脚本/640-166884206052615.png" alt="图片" style="zoom:80%;" />
+<img src="640-166884206052615.png" alt="图片" style="zoom:80%;" />
 
 
 
@@ -658,10 +658,10 @@ print '耗时:'+ convert(varchar(10),datediff(ms,@timediff,getdate()))
 
 结果如下：
 
-<img src="SQL-常用脚本/640-166884206052616.png" alt="图片" style="zoom:80%;" />
+<img src="640-166884206052616.png" alt="图片" style="zoom:80%;" />
 
 在状态栏是不会精确到毫秒的，只能精确到秒
 
-<img src="SQL-常用脚本/640-166884206052617.png" alt="图片" style="zoom:80%;" />
+<img src="640-166884206052617.png" alt="图片" style="zoom:80%;" />
 
 这个脚本可以更加有效的查看SQL代码的执行效率。
